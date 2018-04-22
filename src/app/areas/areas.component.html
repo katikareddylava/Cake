@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <h3>Please select your area</h3>
+
+    <select id="Id" [(ngModel)]="nameId" name="Id" (change)="selectArea($event);">   
+<option [ngValue]="k.id" *ngFor="let k of area">  
+   {{k.name}}  
+</option>  
+</select>
+    <div *ngIf="isAreaChanged">
+        <h3>Shops Avaliable</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ul class="nav navbar-nav">
+                    <li class="shopHighlight mr-5" *ngFor="let shopDetails of individualShopDetails" routerLink="/caketypes/{{shopDetails.ShopId}}" >
+                        {{shopDetails.ShopName}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+

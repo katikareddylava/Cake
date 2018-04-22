@@ -1,0 +1,13 @@
+<div class="container-fluid">
+<h3>Types of cakes avaliable</h3>
+<ul>
+    <li *ngFor="let avaliableType of individualAvaliableType">
+            {{avaliableType.TypeName}}
+    </li>
+</ul>
+<ul><li>{{message}}</li></ul>
+
+</div>
+<div class="container-fluid">
+    <button class="btn btn-primary" (click)="goBack()">go back</button>
+    </div>

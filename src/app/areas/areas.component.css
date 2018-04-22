@@ -1,0 +1,25 @@
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+.shopHighlight:hover{
+    background-color: paleturquoise;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.panel-body{
+    padding: 0px !important;
+}
+
+.nav{
+    padding: 10px;
+}
+
+.mr-5{
+    margin-right: 5px;
+}
